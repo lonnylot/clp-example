@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/lonnylot/clp"
 	"os"
 	"time"
-	"github.com/lonnylot/clp"
 )
 
 func main() {
@@ -46,8 +46,8 @@ func dotsExample() {
 	// Start the output
 	clp.Start()
 
-	t := time.After(time.Duration(time.Second*10))
-	<- t // Wait for the timer...
+	t := time.After(time.Duration(time.Second * 10))
+	<-t // Wait for the timer...
 
 	// Stop our clp dots
 	clp.Stop()
